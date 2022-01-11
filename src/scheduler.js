@@ -37,10 +37,10 @@ export default class Scheduler extends EventEmitter.EventEmitter2 {
         this.appendJob(job)
     }
 
-    removeJob(job) {
-        this.jobs = this.jobs.filter(oldJob => {
-            const matched = oldJob.key === job.key
-            matched && oldJob.stop()
+    removeJob({ key }) {
+        this.jobs = this.jobs.filter(job => {
+            const matched = job.key === key
+            matched && job.stop()
             return !matched
         })
     }
