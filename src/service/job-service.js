@@ -1,5 +1,5 @@
-import { getApi, json, POST } from "../utils/fetch.js";
 import { defaultLogProvider } from "../utils/logger.js";
+import { getApi, json, POST } from "es-fetch-api";
 
 const logger = defaultLogProvider('job-service.js')
 

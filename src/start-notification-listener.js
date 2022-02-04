@@ -1,12 +1,13 @@
 import chalk from "chalk";
-import Client from "./utils/broker/client.js";
+import Client from 'sockjs-broker-client'
 import { defaultLogProvider } from "./utils/logger.js";
+import { generateObjectID } from "./utils/oid.js";
 
 const logger = defaultLogProvider('Cron Scheduler')
 
 export const startNotificationListener = async scheduler => {
     logger.info(chalk.white('Starting notification listener'))
-    const notificationListener = new Client(process.env.SOCKJS_URL)
+    const notificationListener = new Client({ server: process.env.SOCKJS_URL, logger, generateID: generateObjectID })
     await notificationListener.connect()
     await notificationListener.subscribeAsync('to_scheduler', ({ data }) => {
         const { msg: { event, job } } = JSON.parse(data)
