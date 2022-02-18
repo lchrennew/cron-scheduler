@@ -1,9 +1,9 @@
 import chalk from "chalk";
 import Client from 'sockjs-broker-client'
-import { defaultLogProvider } from "./utils/logger.js";
 import { generateObjectID } from "./utils/oid.js";
+import { getLogger } from "es-get-logger";
 
-const logger = defaultLogProvider('Cron Scheduler')
+const logger = getLogger('Cron Scheduler')
 
 export const startNotificationListener = async scheduler => {
     logger.info(chalk.white('Starting notification listener'))

@@ -1,7 +1,7 @@
-import { defaultLogProvider } from "../utils/logger.js";
 import { getApi, json, POST } from "es-fetch-api";
+import { getLogger } from "es-get-logger";
 
-const logger = defaultLogProvider('job-service.js')
+const logger = getLogger('job-service.js')
 
 const api = getApi(process.env.JOB_SERVER)
 

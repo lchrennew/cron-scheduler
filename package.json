@@ -1,5 +1,5 @@
 {
-  "name": "cron-scheduler",
+  "name": "ha-cron-scheduler",
   "version": "1.0.0",
   "main": "src/index.js",
   "author": "Li Chun",
@@ -10,10 +10,9 @@
     "cron-parser": "^4.2.1",
     "dayjs": "^1.10.7",
     "dotenv-flow": "^3.2.0",
-    "es-fetch-api": "^1.0.3",
+    "es-fetch-api": "^1.0.5",
+    "es-get-logger": "^1.0.1",
     "eventemitter2": "^6.4.5",
-    "ioredis": "^4.28.2",
-    "log4js": "^6.3.0",
     "node-schedule": "^2.1.0",
     "sockjs-broker-client": "^1.0.7"
   },

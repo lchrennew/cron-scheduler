@@ -1,9 +1,9 @@
 import Job from "./domain/job.js";
 import { getJobs } from "./service/job-service.js";
-import { defaultLogProvider } from "./utils/logger.js";
 import EventEmitter from "eventemitter2";
+import { getLogger } from "es-get-logger";
 
-const logger = defaultLogProvider('scheduler.js')
+const logger = getLogger('scheduler.js')
 export default class Scheduler extends EventEmitter.EventEmitter2 {
     /**
      *

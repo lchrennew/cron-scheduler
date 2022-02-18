@@ -1,7 +1,7 @@
 import chalk from "chalk";
-import { defaultLogProvider } from "./utils/logger.js";
+import { getLogger } from "es-get-logger";
 
-const logger = defaultLogProvider('Cron Scheduler')
+const logger = getLogger('Cron Scheduler')
 
 export const startJobs = async scheduler => {
     logger.info(chalk.white('Loading scheduler jobs'))
