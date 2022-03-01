@@ -1,7 +1,7 @@
 import chalk from "chalk";
 import Client from 'sockjs-broker-client'
-import { generateObjectID } from "./utils/oid.js";
 import { getLogger } from "es-get-logger";
+import { generateObjectID } from "es-object-id";
 
 const logger = getLogger('Cron Scheduler')
 

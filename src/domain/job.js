@@ -1,9 +1,9 @@
-import { generateObjectID } from "../utils/oid.js";
 import Schedule from "./schedule.js";
 import { scheduleJob } from 'node-schedule'
 import dayjs from "dayjs";
 import { bidJob } from "../service/job-service.js";
 import { getLogger } from "es-get-logger";
+import { generateObjectID } from "es-object-id";
 
 const logger = getLogger('job.js')
 export default class Job {

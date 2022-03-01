@@ -8,13 +8,14 @@
   "dependencies": {
     "chalk": "^5.0.0",
     "cron-parser": "^4.2.1",
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.10.8",
     "dotenv-flow": "^3.2.0",
-    "es-fetch-api": "^1.0.5",
+    "es-fetch-api": "^1.0.19",
     "es-get-logger": "^1.0.1",
+    "es-object-id": "^1.0.0",
     "eventemitter2": "^6.4.5",
     "node-schedule": "^2.1.0",
-    "sockjs-broker-client": "^1.0.7"
+    "sockjs-broker-client": "^1.0.11"
   },
   "scripts": {
     "start": "npx nodemon"
