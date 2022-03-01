@@ -1,6 +1,6 @@
 {
   "name": "ha-cron-scheduler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "author": "Li Chun",
   "license": "MIT",
